@@ -9,21 +9,25 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Vulte Payment</title>
 </head>
-<body>
+<body id="body">
 
     <!-- navigation section -->
-    <nav class="nav container">
-        <div class="img-container">
-            <img src="https://cdn.onepipe.io/assets/console/images/vulte-logo.png" class="img-logo" alt="logo">
-        </div>
-
-        <ul>
-            <li><a class='anchor' href="">Home</a></li>
-            <li><a class='anchor' href="">Features</a></li>
-            <li><a class='anchor' href="">Documentation</a></li>
-            <li><a class="anchor-signin" href="">Sign in</a></li>
-        </ul>
-    </nav>
+    <div id="hidden">
+        <nav id="nav" class="nav container">
+            <div class="img-container">
+                <img src="https://cdn.onepipe.io/assets/console/images/vulte-logo.png" class="img-logo" alt="logo">
+            </div>
+    
+            <ul>
+                <li><a class='anchor' href="">Home</a></li>
+                <li><a class='anchor' href="">Features</a></li>
+                <li><a class='anchor' href="">Documentation</a></li>
+                <li><a class="anchor-signin" href="">Sign in</a></li>
+                <li class="svg-container"><img class="img-menu" src="./styles/menu-line.png" alt="menu"><li>
+            </ul>
+        </nav>
+    </div>
+    
 
     <!-- hero-section -->
 
@@ -47,7 +51,7 @@
 
     <section class="section-content-plane container flex">
     
-        <div>
+        <div class="img-first-section-container">
             <img src="https://openbanking.vulte.ng/img/piggy-bank.svg" alt="image">
         </div>
 
@@ -68,7 +72,7 @@
              <a href="" class="hero-btn">CHECK IT OUT</a>
         </div>
 
-        <div class="section-image">
+        <div class="section-image img-first-section-container">
             <img src="https://openbanking.vulte.ng/img/pay-options.svg" alt="image">
         </div>
 
@@ -78,7 +82,7 @@
     <section class="section-content-plane">
         <div class="container flex">
 
-            <div class="third-section-img">
+            <div class="third-section-img img-first-section-container ">
                 <img src="	https://openbanking.vulte.ng/img/premium.svg" alt="image">
             </div>
 
@@ -99,11 +103,13 @@
                 <p>With a combination of some of the extra APIs made available, you can fight fraud and create even more interesting user experiences. From APIs that lets you pull cards linked to a phone number, to APIs that let you tokenize cards, to APIs that show KYC details of account linked to a card and many more!</p>
                 <a href="" class="hero-btn">START HERE</a>
             </div>
-            <div class="fourth-section-img">
+            <div class="fourth-section-img img-first-section-container">
                 <img src="https://openbanking.vulte.ng/img/api-window.svg" alt="image">
             </div>
         </div>
     </section>
 
+
+<script src="./script.js"></script>
 </body>
 </html>

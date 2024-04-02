@@ -53,12 +53,15 @@ ul {
     width: 80%;
     margin: 0 auto;
     max-width: 1900px;
+    /* position: sticky;
+    top: 0; */
     /* border: 2px solid red; */
 }
 
 .nav {
     display: flex;
     padding: var(--container-padding);
+
 }
 
 .nav > ul  {
@@ -93,6 +96,10 @@ ul {
 }
 
 
+.svg-container {
+    display: none;
+}
+
 /* header styles */
 
 .header-container {
@@ -108,6 +115,8 @@ ul {
     width: 60%;
     padding: var(--container-padding);
 }
+
+
 .header-hero > h1 {
     font-size: 3.7rem;
     margin-bottom: 1rem;
@@ -273,4 +282,112 @@ ul {
 
 .gap {
     gap: 10rem;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        width: 90%;
+    }
+    
+    .header-hero {
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+   
+   .header-hero {
+    width: 80%;
+   }
+   
+    .flex {
+        display: block;
+    }
+
+.img-first-section-container {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+    .section-content, .section-details, .third-section-content, .fourth-section-content {
+        text-align: center;
+    }
+
+    .container{
+        width: 70%;
+        margin: 0 auto;
+    }
+/* 
+    #hidden {
+        display: none;
+    } */
+}
+
+/* from a break-point to another break-point */
+
+@media (min-width: 767px ) and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+
+    .header-hero {
+        width: 70%;
+    }
+
+    .header-hero > h1 {
+        font-size: 2.7rem;
+        white-space: nowrap;
+       }
+
+       .header-hero > p {
+        line-height: 1.8rem;
+        letter-spacing: 1.5;
+       }
+
+}
+
+@media (max-width: 766px) {
+  
+    .header-hero {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-hero > h1 {
+        font-size: 2.8rem;
+        white-space: nowrap;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .svg-container {
+        display: block;
+        padding: .20rem .60rem;
+        background-color: #61297f;
+        border-radius: .25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+  .img-menu {
+    color: white;
+  }
+
+    .nav > ul {
+        gap: 0.5rem;
+        justify-content: start;
+        /* border: 1px solid red; */
+    }
+
 }
